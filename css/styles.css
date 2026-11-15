@@ -1,0 +1,36 @@
+/* Custom scrollbar & subtle animations for DoRehab Pro ID */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090D16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10B981;
+}
+
+.exercise-card {
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 12px 28px -10px rgba(16, 185, 129, 0.18);
+}
+
+.img-zoom {
+  transition: transform 0.45s ease;
+}
+
+.exercise-card:hover .img-zoom {
+  transform: scale(1.05);
+}
